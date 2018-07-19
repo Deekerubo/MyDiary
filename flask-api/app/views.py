@@ -1,13 +1,19 @@
+from flask import Flask
 from app import app
 from flask import jsonify, request
 from app.models import Models
 
-# creat an instance of models class
+# create an instance of models class
 models = Models()
 @app.route('/api/v1/', methods=["GET"])
 def index():
-    data = {"title":"content"}
-    return jsonify(data), 200
+    message = {"My diary": {
+                    "Message":"Welcome to my diary"
+                }
+              }
+
+    res = {"Message": message}
+    return jsonify(res), 200
 
 @app.route('/api/v1/entries', methods=["POST"])
 def adding():
