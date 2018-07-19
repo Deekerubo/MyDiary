@@ -2,3 +2,7 @@
 venv/
 *.pyc
 ../.vscode/
+../.coverage
+../.pytest_cache/
+.coverage
+.pytest_cache/
