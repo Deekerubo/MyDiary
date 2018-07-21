@@ -37,3 +37,5 @@ class Tests(unittest.TestCase):
         self.app.post('/api/v1/entries', data={"title":"Sports day", "content":"The sports day"})
         response = self.app.get('/api/v1/entries/0')
         self.assertEqual(response.status_code, 200)
+
+
