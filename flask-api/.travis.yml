@@ -1,5 +1,5 @@
 branches:
-	- api
+	api
 #project
 language: python 
 python: 
