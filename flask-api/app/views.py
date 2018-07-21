@@ -1,9 +1,9 @@
-from flask import Flask
+from flask_api import FlaskAPI
 from flask import jsonify, request
 from app.models import Models
 
-app = Flask(__name__)
-
+app = FlaskAPI(__name__)
+ 
 # create an instance of models class
 models = Models()
 @app.route('/api/v1/', methods=["GET"])
@@ -19,9 +19,9 @@ def index():
 @app.route('/api/v1/entries', methods=["POST"])
 def adding():
     
-    data = request.get_json()
-    title = data['title']
-    content = data['content']
+    # data = request.get_json()
+    title = request.data.get('title', "")
+    content = request.data.get('content', "")
     models.add(title, content)
     return jsonify({"title":title, "content":content}), 201
 
@@ -41,9 +41,8 @@ def edit_one_entry(entryId):
     entries_in_model = models.all_entries()
     for i in entries_in_model:
         if i['id'] == entryId:
-            data = request.get_json()
-            title = data['title']
-            content = data['content']
+            title = request.data.get('title', "")
+            content = request.data.get('content', "")
             i['title'] = title
             i['content'] = content
-            return jsonify({"title":title, "content":content})
+            return jsonify({"title":title, "content":content}), 201
