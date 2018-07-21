@@ -11,3 +11,6 @@ install:
 script:
   py.test --cov=app flask-api/tests/test.py
 
+after_success:
+  coveralls
+
