@@ -9,5 +9,5 @@ install:
 
 #scripts
 script:
-  py.test --coverage=app tests/test.py
+  py.test --cov=app tests/test.py
 
