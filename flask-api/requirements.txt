@@ -27,7 +27,6 @@ pbr==4.1.0
 pluggy==0.6.0
 py==1.5.4
 pycrypto==2.6.1
-pygobject==3.26.1
 pylint==1.9.2
 pytest==3.6.3
 pytest-cov==2.5.1
