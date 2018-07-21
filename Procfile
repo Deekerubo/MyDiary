@@ -1,1 +1,1 @@
-web: sh -c 'cd flask-api && gunicorn run'
+web: gunicorn flask-api:app
