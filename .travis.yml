@@ -1,0 +1,12 @@
+#project
+language: python 
+python: "3.6.5"
+
+#dependecies
+install:
+  pip install -r requirements.txt
+
+#scripts
+script:
+  py.test --coverage=app tests/test.py
+
