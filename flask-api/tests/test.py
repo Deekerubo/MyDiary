@@ -30,7 +30,7 @@ class Tests(unittest.TestCase):
         response = self.app.post('/api/v1/entries', data={"title":"Deployment", "content":"Crazy deployment"})
         self.assertEqual(response.status_code, 201)
     def test_mofiy(self):
-        self.app.post('/api/v1/entries', data={"title":"SDeployment", "content":"Crazy deployment"})
+        self.app.post('/api/v1/entries', data={"title":"Deployment", "content":"Crazy deployment"})
         response = self.app.put('/api/v1/entries/0', data={"title":"Deployment", "content":"Crazy deployment"})
         self.assertEqual(response.status_code, 201)
     def get_one_entry(self):
