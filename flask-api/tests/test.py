@@ -14,8 +14,6 @@ class Tests(unittest.TestCase):
         self.client = app.test_client
         self.route_get_entries = '/api/v1/entries'
         self.route_index = '/api/v1l'
-        # self.route_get_entry = '/api/v1'
-        # self.client = self.app.test_client
         app.config['TESTING'] = True
         app.config['WTF_CSRF_ENABLED'] = False
         app.config['DEBUG'] = False
