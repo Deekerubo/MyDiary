@@ -13,7 +13,6 @@ function onViewEntries(){
     document.getElementById('viewEntry').style.display = 'inline';
     document.getElementById('newEntry').style.display = 'none';
     document.getElementById('modify').style.display = 'none';
-    document.getElementById('reminder').style.display = 'inline';
 
 
 }
@@ -24,7 +23,6 @@ function onCreateEntries(){
 document.getElementById('newEntry').style.display = 'inline';
 document.getElementById('viewEntry').style.display = 'none';
 document.getElementById('modify').style.display = 'none';
-document.getElementById('reminder').style.display = 'inline';
 
 
 
@@ -35,9 +33,6 @@ function onModifyEntries(){
     document.getElementById('viewEntry').style.display = 'none';
     document.getElementById('newEntry').style.display = 'none';
     document.getElementById('reminder').style.display = 'inline';
-    document.getElementById('modify').style.display = 'inline';
-
-
 }
 
 

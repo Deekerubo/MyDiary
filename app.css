@@ -10,6 +10,9 @@ body {
 /* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;
+  background-blend-mode: hard-light;
+  padding-right: 20%;
+  padding-left: 20%;
   
 
   
