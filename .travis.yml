@@ -1,0 +1,16 @@
+#project
+language: python 
+python: 
+- "3.6"
+
+#dependecies
+install:
+- pip install -r requirements.txt
+
+#scripts
+script:
+  py.test --cov=app flask-api/tests/test.py
+
+after_success:
+  coveralls
+
