@@ -9,11 +9,14 @@
 <body>
     <div>
     <div class="topnav">
-        <button class="btn" id="newEntryButton" onclick="onCreateEntries();">
-            <i class="fa fa-plus"></i> New Entry</button>
-            <button class="btn" id="viewEntryButton" onclick="onViewEntries();">
-            <i class="fa fa-bars"></i> View Entries</button>
+        <div>
+            <button class="btn1" id="newEntryButton" onclick="onCreateEntries();">
+            <i class="fa fa-plus"></i> New Entry</button></div>
+        <div>
+            <button class="btn2" id="viewEntryButton" onclick="onViewEntries();">
+            <i class="fa fa-bars"></i> View Entries</button></div>
     </div>
+    <br>
     <div class="main" >
         <div class ="newEntry" id="newEntry" style="display: none">
         <div>
@@ -80,8 +83,7 @@
         <div>
             <label>Text</label>
             <textarea cols="30" rows="5" placeholder="Text"></textarea>
-        </div><br />
-        <button type="submit" onclick="onViewEntries();">Update</button>
+        </div>
         </div>
         </div>
         </div>
