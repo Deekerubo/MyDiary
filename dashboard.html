@@ -7,15 +7,8 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <div id="overlay" onclick="off()"></div>
-    <div class="topnav">
-    <div class="topnav-right">
-                <a href="login.html" class="active">Login</a>
-                <a href="register.html" class="active">Register</a>
-    </div>
-    </div>
     <div>
-    <div class="sidebar">
+    <div class="topnav">
         <button class="btn" id="newEntryButton" onclick="onCreateEntries();">
             <i class="fa fa-plus"></i> New Entry</button><br><br>
             <button class="btn" id="viewEntryButton" onclick="onViewEntries();">
@@ -53,7 +46,7 @@
         </div><br/>
             <button type="submit" onclick="onViewEntries();">Save</button>
         </div>
-        <div class="viewEntry" id="viewEntry" style="display: none">
+        <div class="viewEntry" id="viewEntry">
             <p>Number of entries : 2</p>
             <table style="width:50%">
                 <tr>
