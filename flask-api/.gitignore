@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .env
 venv/
 *.pyc
@@ -7,3 +8,13 @@ venv/
 .coverage
 .pytest_cache/
 
+=======
+.env
+venv/
+*.pyc
+../.vscode/
+../.coverage
+../.pytest_cache/
+.coverage
+.pytest_cache/
+>>>>>>> origin/master

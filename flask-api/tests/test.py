@@ -27,14 +27,14 @@ class Tests(unittest.TestCase):
 
     def test_adding(self):
         """Test API POST entry"""
-        response = self.app.post('/api/v1/entries', data={"title":"Sports day", "content":"The sports day"})
+        response = self.app.post('/api/v1/entries', data={"title":"Deployment", "content":"Crazy deployment"})
         self.assertEqual(response.status_code, 201)
     def test_mofiy(self):
-        self.app.post('/api/v1/entries', data={"title":"Sports day", "content":"The sports day"})
-        response = self.app.put('/api/v1/entries/0', data={"title":"Sports day", "content":"The sports day"})
+        self.app.post('/api/v1/entries', data={"title":"Deployment", "content":"Crazy deployment"})
+        response = self.app.put('/api/v1/entries/0', data={"title":"Deployment", "content":"Crazy deployment"})
         self.assertEqual(response.status_code, 201)
     def get_one_entry(self):
-        self.app.post('/api/v1/entries', data={"title":"Sports day", "content":"The sports day"})
+        self.app.post('/api/v1/entries', data={"title":"Deployment", "content":"Crazy deployment"})
         response = self.app.get('/api/v1/entries/0')
         self.assertEqual(response.status_code, 200)
 

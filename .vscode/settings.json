@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/usr/bin/python3",
+    "python.pythonPath": "C:\\Users\\Diana\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
     "git.ignoreLimitWarning": true,
     "python.linting.enabled": false
 }
