@@ -39,12 +39,6 @@ button:hover {
 opacity: 0.8;
 }
 
-.cancelbtn {
-width: auto;
-padding: 10px 18px;
-background-color: #f44336;
-}
-
 .imgcontainer {
 text-align: center;
 margin: 24px 0 12px 0;
@@ -81,23 +75,30 @@ display: table;
 }
 
 .topnav{
-  width: 60%;
+  width: 15%;
   height: 20%;
-  background-color: hsla(hue, saturation, lightness, alpha);
   margin-top: 20px;
-
-
-  
+  padding: 60px;
+  margin: 0 auto;
+  border-radius: 5px; 
 }
 .btn {
   background-color: green; 
-  border: none; 
   color: white; 
   padding: 12px 16px; 
   font-size: 16px; 
   cursor: pointer;
   border-radius: 10px;
-  
+}
+.main{
+  width: 50%;
+  height: 20%;
+  margin-top: 20px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 5px;
+  font-size: 20px;
 }
 .btn:hover {
   background-color: green;
