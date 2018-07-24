@@ -7,16 +7,8 @@
   <title>Login</title>
 </head>
 <body>
-  <div class="topnav">
-  <div class="topnav-right">
-    <a href="index.html" class="active">Home</a>
-    <a href="dashboard.html" class="active">Dashboard</a>
-    <a href="login.html" class="active">Login</a>
-    <a href="register.html" class="active">Register</a>
-  </div>
-  </div>
   <form>
-    <div class="container">
+    <div class="container1">
       <label for="uname">
       <b>Username</b>
       </label>
@@ -25,17 +17,18 @@
       <b>Password</b>
       </label>
       <input type="password" placeholder="Enter Password" name="psw" required>
-      <button type="submit">Login</button>
+      <button type="submit" onclick="location.href='dashboard.html';">Login</button>
       <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
-    </div>
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot
         <a href="#">password?</a>
       </span>
-    </div>
+      <div>
+          <p>Dont have an account?</p>
+            <a href="register.html" class="button">Sign Up</a>
+          </div>
+          </div>
   </form>
 </body>
 </html>

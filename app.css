@@ -6,46 +6,6 @@ body {
   background-size: cover;
   
 }
-
-/* Add a black background color to the top navigation */
-.topnav {
-  overflow: hidden;
-  background-blend-mode: hard-light;
-  padding-right: 20%;
-  padding-left: 20%;
-  
-
-  
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  background-color: darkkhaki;
-  color: black;
-
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  color: #008000;
-}
-
-/* Right-aligned section inside the top navigation 
-.topnav-right {
-  float: right;
-  border: 4px solid white;
-  border-radius: 5px;}*/
-
 input[type='text'],
 input[type='password'] {
   width: 100%;
@@ -54,16 +14,6 @@ input[type='password'] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
-}
-
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
 }
 input[type='text'],
 input[type='password'] {
@@ -105,12 +55,11 @@ width: 40%;
 border-radius: 50%;
 }
 
-.container {
-padding: 70px;
+.container1 {
+padding: 50px;
 margin: 0 auto;
 width: 50%;
 background-color: #eee;
-padding: 16px;
 border: 4px solid #eee;
 border-radius: 5px;
 }
@@ -119,8 +68,6 @@ span.psw {
 float: right;
 padding-top: 16px;
 }
-
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
 span.psw {
   display: block;
@@ -130,33 +77,25 @@ span.psw {
   width: 100%;
 }
 }
-
-/* Clear floats */
 .clearfix::after {
 content: '';
 clear: both;
 display: table;
 }
 
-/* The sidebar menu */
+
 .sidenav {
-height: 100%; /* Full-height: remove this if you want "auto" height */
-width: 160px; /* Set the width of the sidebar */
-z-index: 1; /* Stay on top */
-top: 0; /* Stay at the top */
+height: 100%; 
+width: 160px; 
+z-index: 1; 
+top: 0; 
 left: 0;
-background-color: #111; /* Black */
-overflow-x: hidden; /* Disable horizontal scroll */
+background-color: #111;
+overflow-x: hidden; 
 padding-top: 20px;
 }
 button:hover {
   opacity: 0.8;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
 }
 .sidebar{
   width: 20%;
@@ -217,10 +156,39 @@ label {
 }
 .msg{
   background-color: hsla(hue, saturation, lightness, alpha);
-  margin-top: 18%;
   margin-right: 30%;
   margin-left: 13%;
   padding: 16px 25px;
   color: #053a07;
   font-size: 40px;
+}
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  size: 40px;
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: right;
+}
+a.button1 {
+  -moz-appearance: button;
+  size: 200px;
+  background-color: #4CAF50; 
+  border-radius: 100px;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 22%;
+  margin-left: 50%;
+  margin-right: 30%;
+  
 }
