@@ -18,11 +18,10 @@ def index():
 
 @app.route('/api/v1/entries', methods=["POST"])
 def adding():
-    # data = request.get_json()
     title = request.data.get('title', "")
     content = request.data.get('content', "")
     models.add(title, content)
-    return jsonify({"title":title, "content":content}), 201
+    return jsonify({"title":title, "c￼ontent":content}), 201
 
 @app.route('/api/v1/entries' ,methods=["GET"])
 def get_entries():
