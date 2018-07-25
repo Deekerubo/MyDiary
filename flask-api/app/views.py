@@ -18,7 +18,6 @@ def index():
 
 @app.route('/api/v1/entries', methods=["POST"])
 def adding():
-    
     # data = request.get_json()
     title = request.data.get('title', "")
     content = request.data.get('content', "")
