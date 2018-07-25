@@ -1,5 +1,5 @@
 from flask_api import FlaskAPI
-from flask import jsonify, request
+from flask import jsonify, requestpip install flask-marshmallow
 from app.models import Models
 
 app = FlaskAPI(__name__)
