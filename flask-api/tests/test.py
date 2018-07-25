@@ -13,7 +13,7 @@ class Tests(unittest.TestCase):
         """Initialise Tests"""
         self.client = app.test_client
         self.route_get_entries = '/api/v1/entries'
-        self.route_index = '/api/v1l'
+        self.route_index = '/api/v1'
         # self.route_get_entry = '/api/v1'
         # self.client = self.app.test_client
         app.config['TESTING'] = True
@@ -30,10 +30,12 @@ class Tests(unittest.TestCase):
         response = self.app.post('/api/v1/entries', data={"title":"Deployment", "content":"Crazy deployment"})
         self.assertEqual(response.status_code, 201)
     def test_mofiy(self):
+        """Test API MODIFY entry"""
         self.app.post('/api/v1/entries', data={"title":"Deployment", "content":"Crazy deployment"})
-        response = self.app.put('/api/v1/entries/0', data={"title":"Deployment", "content":"Crazy deployment"})
+        response = self.app.put('/api/v1/entries/1',)
         self.assertEqual(response.status_code, 201)
     def get_one_entry(self):
+        """Test API GET an entry"""
         self.app.post('/api/v1/entries', data={"title":"Deployment", "content":"Crazy deployment"})
-        response = self.app.get('/api/v1/entries/0')
+        response = self.app.get('/api/v1/entries/1')
         self.assertEqual(response.status_code, 200)
