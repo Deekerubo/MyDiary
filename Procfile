@@ -1,1 +1,2 @@
-web: gunicorn --workers=1 run:app
+web: sh -c 'cd flask-api && gunicorn app:app'
+
