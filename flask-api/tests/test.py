@@ -11,11 +11,10 @@ class Tests(unittest.TestCase):
 
     def setUp(self):
         """Initialise Tests"""
-        self.client = app.test_client
+        self.app = create_app("testing")
+        self.client = self.app.test_client()
         self.route_get_entries = '/api/v1/entries'
         self.route_index = '/api/v1'
-        # self.route_get_entry = '/api/v1'
-        # self.client = self.app.test_client
         app.config['TESTING'] = True
         app.config['WTF_CSRF_ENABLED'] = False
         app.config['DEBUG'] = False

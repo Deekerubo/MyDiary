@@ -4,7 +4,7 @@ from app.models import Models
 
 app = FlaskAPI(__name__)
  
-# create an instance of models class
+
 models = Models()
 @app.route('/api/v1/', methods=["GET"])
 def index():
