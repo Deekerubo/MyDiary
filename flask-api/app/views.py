@@ -18,8 +18,7 @@ def index():
 
 @app.route('/api/v1/entries', methods=["POST"])
 def adding():
-    
-    # data = request.get_json()
+    """POST"""
     title = request.data.get('title', "")
     content = request.data.get('content', "")
     models.add(title, content)
@@ -27,10 +26,13 @@ def adding():
 
 @app.route('/api/v1/entries' ,methods=["GET"])
 def get_entries():
+    """ALL ENTRIES"""
+    entries_in_model = models.all_entries()
     return jsonify(models.all_entries()), 200
 
 @app.route('/api/v1/entries/<int:entryId>')
 def get_one_entry(entryId):
+    """SINGLE ENTRY"""
     entries_in_model = models.all_entries()
     for i in entries_in_model:
         if i['id'] == entryId:
