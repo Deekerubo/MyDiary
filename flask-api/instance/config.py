@@ -30,7 +30,7 @@ class ProductionConfig(Config):
     """Configurations for Production."""
     DEBUG = False
     TESTING = False
-    SECRET_KEY = os.getenv('JWT_SECRET_KEY')
+    SECRET_KEY = os.getenv('SECRET_KEY')
 
 app_config = {
     'development': DevelopmentConfig,
